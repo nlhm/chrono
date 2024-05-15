@@ -41,6 +41,10 @@ class CH_VEHICLE_API ChSteering : public ChPart {
     /// suspension subsystem are attached.
     std::shared_ptr<ChBody> GetSteeringLink() const { return m_link; }
 
+    /// Add by nlhm
+    /// Set the max turn angle of the steering subsystem
+    virtual void SetMaxSteeringAngle(double max_angle) = 0;
+    
     /// Initialize this steering subsystem.
     /// The steering subsystem is initialized by attaching it to the specified chassis at the specified location (with
     /// respect to and expressed in the reference frame of the chassis) and with specified orientation (with respect to

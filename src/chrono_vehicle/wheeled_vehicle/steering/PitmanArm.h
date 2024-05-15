@@ -37,6 +37,7 @@ class CH_VEHICLE_API PitmanArm : public ChPitmanArm {
     PitmanArm(const rapidjson::Document& d);
     ~PitmanArm() {}
 
+    virtual void SetMaxSteeringAngle(double max_angle) override { m_maxAngle = max_angle * CH_DEG_TO_RAD; }
     virtual double getSteeringLinkMass() const override { return m_steeringLinkMass; }
     virtual double getPitmanArmMass() const override { return m_pitmanArmMass; }
 
