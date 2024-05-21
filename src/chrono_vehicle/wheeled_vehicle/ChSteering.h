@@ -43,7 +43,7 @@ class CH_VEHICLE_API ChSteering : public ChPart {
 
     /// Add by nlhm
     /// Set the max turn angle of the steering subsystem
-    virtual void SetMaxSteeringAngle(double max_angle) = 0;
+    virtual void SetMaxSteeringAngle(double max_angle) {};
     
     /// Initialize this steering subsystem.
     /// The steering subsystem is initialized by attaching it to the specified chassis at the specified location (with
